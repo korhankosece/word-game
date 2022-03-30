@@ -31,7 +31,7 @@ const User: React.FC<IUserProps> = ({ restartGameTimer, stopGameTimer, clearGame
     useEffect(() => {
         speech.onresult((event: ISpeechEvent) => {
             const { transcript }: { transcript: string } = event.results[0][0];
-            const userWord = transcript.toLocaleLowerCase().toString();
+            const userWord = transcript.toLocaleLowerCase().toString().replaceAll('.', '');
 
             if (userWord.includes(' ')) {
                 stopGameTimer();
@@ -43,6 +43,10 @@ const User: React.FC<IUserProps> = ({ restartGameTimer, stopGameTimer, clearGame
                 return;
             }
             if (lastUsedWord && !isValidWord(lastUsedWord, userWord)) {
+                console.log(lastUsedWord);
+                console.log(userWord);
+                console.log(isValidWord(lastUsedWord, userWord));
+
                 stopGameTimer();
                 endGame({
                     isGameEnd: true,
