@@ -2,6 +2,11 @@
 Kelime oyunu bilgisayara karşı en son söylenen kelimenin son harfinden yeni kelime türetme oyunudur. Oyun sesli komutlarla oynandığı için mikrofon kullanımı zorunludur.
 
 # Nasıl çalıştırılır
+Öncelikle kurulum için alttaki komut satırı çalıştırılmalıdır.
+```bash
+yarn install
+```
+Daha sonra alttaki komut satırı ile projeyi çalıştırabilirsiniz.
 ```bash
 yarn start
 ```
