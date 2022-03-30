@@ -1,0 +1,45 @@
+.toggle-player-btn {
+    margin: 1rem 0 2rem 0;
+}
+
+.last-used-word {
+    margin: 1rem 0 1rem 0;
+}
+
+.last-used-word span {
+    color: #1976d2;
+    font-weight: 600 !important;
+}
+
+.player-icons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.player-icons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.human-icon,
+.human-icon-turn {
+    margin-right: 5rem;
+}
+
+.human-icon,
+.computer-icon {
+    font-size: 7rem !important;
+}
+
+.human-icon-turn,
+.computer-icon-turn {
+    font-size: 10rem !important;
+    color: #1976d2;
+}
+
+.toggle-btn {
+    text-transform: none !important;
+}

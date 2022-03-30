@@ -1,0 +1,25 @@
+.modal-inner-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 3px #000;
+    box-shadow: 0 0 3px #000;
+    padding: 2rem;
+    text-align: center;
+}
+
+.modal-text {
+    margin: 2rem auto !important;
+    font-weight: 600 !important;
+}
+
+.modal-sub-text {
+    margin: 2rem auto !important;
+}
+
+.modal-btn {
+    text-transform: none !important;
+}
